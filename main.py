@@ -1,5 +1,5 @@
 """
-Cogeden CSS System Generator - Main Entry Point
+MikoCSS System Generator - Main Entry Point
 IE6-11, Servo, Chrome 1+, Firefox 1+ Compatible
 """
 import json

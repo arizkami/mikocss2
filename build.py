@@ -58,7 +58,7 @@ def get_file_size(file_path):
 def build_production(output_dir="dist"):
     """Build production-ready files"""
     print("=" * 60)
-    print("  Cogeden CSS - Production Build")
+    print("  MikoCSS - Production Build")
     print("=" * 60)
     
     # Create output directory
@@ -181,7 +181,7 @@ def build_production(output_dir="dist"):
     
     # 7. Generate README
     print("\n📦 Step 7: Generating README...")
-    readme = f"""# Cogeden CSS - Production Build
+    readme = f"""# MikoCSS - Production Build
 
 ## Files
 
@@ -315,7 +315,7 @@ if __name__ == "__main__":
     
     if len(sys.argv) > 1:
         if sys.argv[1] == "--help":
-            print("Cogeden CSS Production Build")
+            print("MikoCSS Production Build")
             print("\nUsage:")
             print("  python build.py [output_dir]")
             print("\nOptions:")

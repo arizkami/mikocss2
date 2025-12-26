@@ -46,7 +46,7 @@ class JSGenerator:
     
     def generate_css_in_js(self, css_content, var_name="styles"):
         """Generate CSS-in-JS format"""
-        js = f"// Cogeden CSS-in-JS - Production Ready\n"
+        js = f"// MikoCSS-in-JS - Production Ready\n"
         js += f"// Generated: {self._get_timestamp()}\n\n"
         js += f"const {var_name} = {{\n"
         
@@ -299,7 +299,7 @@ window.CogedenUtils = CogedenUtils;
     def generate_minified_loader(self, css_file):
         """Generate minified CSS loader"""
         js = f"""
-// Cogeden CSS Loader - Minified
+// MikoCSS Loader - Minified
 (function(){{var l=document.createElement('link');l.rel='stylesheet';l.href='{css_file}';document.head.appendChild(l);}})();
 """
         return js.strip()
@@ -307,7 +307,7 @@ window.CogedenUtils = CogedenUtils;
     def generate_build_config(self):
         """Generate build configuration"""
         config = {
-            "name": "cogeden-css",
+            "name": "mikocss",
             "version": "1.0.0",
             "description": "Ultimate CSS system for legacy browsers",
             "main": "dist/cogeden.min.css",
