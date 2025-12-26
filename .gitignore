@@ -1,3 +1,4 @@
 /dist
 /example/cogeden.css
 *.pyc
+example/shared/cogeden.css

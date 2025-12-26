@@ -33,6 +33,11 @@ def generate_transforms(generator):
     generator.add_rule(".scale-125", {"transform": "scale(1.25)"})
     generator.add_rule(".scale-150", {"transform": "scale(1.5)"})
     
+    # Hover scale
+    generator.add_rule(".hover\\:scale-105:hover", {"transform": "scale(1.05)"})
+    generator.add_rule(".hover\\:scale-110:hover", {"transform": "scale(1.1)"})
+    generator.add_rule(".hover\\:scale-125:hover", {"transform": "scale(1.25)"})
+    
     # Rotate
     generator.add_rule(".rotate-0", {"transform": "rotate(0deg)"})
     generator.add_rule(".rotate-45", {"transform": "rotate(45deg)"})

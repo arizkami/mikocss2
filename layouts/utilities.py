@@ -65,6 +65,12 @@ def generate_flexbox(generator):
     generator.add_rule(".flex-1", {"flex": "1 1 0%"})
     generator.add_rule(".flex-auto", {"flex": "1 1 auto"})
     generator.add_rule(".flex-none", {"flex": "none"})
+    
+    # Gap utilities (modern browsers with fallback)
+    for gap in [0, 1, 2, 3, 4, 6, 8, 12, 16, 24, 32]:
+        generator.add_rule(f".gap-{gap}", {"gap": f"{gap*4}px"})
+        generator.add_rule(f".gap-x-{gap}", {"column-gap": f"{gap*4}px"})
+        generator.add_rule(f".gap-y-{gap}", {"row-gap": f"{gap*4}px"})
 
 def generate_position(generator, spacing):
     """Generate position utilities"""

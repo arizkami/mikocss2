@@ -155,7 +155,8 @@ def generate_color_scheme_system(generator):
 }
 """)
     
-    # Dark mode specific utilities
+    # Dark mode specific utilities (both auto and manual)
+    # Auto dark mode (prefers-color-scheme)
     generator.add_rule(".dark\\:bg-gray-900", {
         "background-color": "#1a1a1a"
     }, "(prefers-color-scheme: dark)")
@@ -168,7 +169,21 @@ def generate_color_scheme_system(generator):
         "border-color": "#495057"
     }, "(prefers-color-scheme: dark)")
     
-    # Light mode specific utilities
+    # Manual dark mode class
+    generator.add_rule(".dark-mode .dark\\:bg-gray-900", {
+        "background-color": "#1a1a1a"
+    })
+    
+    generator.add_rule(".dark-mode .dark\\:text-white", {
+        "color": "#ffffff"
+    })
+    
+    generator.add_rule(".dark-mode .dark\\:border-gray-700", {
+        "border-color": "#495057"
+    })
+    
+    # Light mode specific utilities (both auto and manual)
+    # Auto light mode (prefers-color-scheme)
     generator.add_rule(".light\\:bg-white", {
         "background-color": "#ffffff"
     }, "(prefers-color-scheme: light)")
@@ -180,6 +195,19 @@ def generate_color_scheme_system(generator):
     generator.add_rule(".light\\:border-gray-300", {
         "border-color": "#dee2e6"
     }, "(prefers-color-scheme: light)")
+    
+    # Manual light mode class
+    generator.add_rule(".light-mode .light\\:bg-white", {
+        "background-color": "#ffffff"
+    })
+    
+    generator.add_rule(".light-mode .light\\:text-black", {
+        "color": "#000000"
+    })
+    
+    generator.add_rule(".light-mode .light\\:border-gray-300", {
+        "border-color": "#dee2e6"
+    })
 
 
 def generate_theme_switcher_js():
