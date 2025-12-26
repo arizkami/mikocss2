@@ -1,0 +1,59 @@
+{
+  "spacing": {
+    "0": "0px",
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    "4": "16px",
+    "5": "20px",
+    "6": "24px",
+    "8": "32px",
+    "10": "40px",
+    "12": "48px",
+    "16": "64px",
+    "20": "80px",
+    "24": "96px",
+    "32": "128px",
+    "40": "160px",
+    "48": "192px"
+  },
+  "font_sizes": {
+    "xs": "10px",
+    "sm": "12px",
+    "base": "16px",
+    "lg": "20px",
+    "xl": "24px",
+    "2xl": "32px",
+    "3xl": "48px",
+    "4xl": "64px",
+    "5xl": "80px"
+  },
+  "widths": {
+    "full": "100%",
+    "half": "50%",
+    "third": "33.333%",
+    "quarter": "25%",
+    "screen": "100vw",
+    "auto": "auto",
+    "min": "min-content",
+    "max": "max-content"
+  },
+  "breakpoints": {
+    "xs": "480px",
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1536px"
+  },
+  "colors": {
+    "palette": {
+      "total_hues": 64,
+      "shades_per_hue": 8,
+      "lightness_start": 0.92,
+      "lightness_step": 0.085,
+      "saturation_high": 0.95,
+      "saturation_low": 0.75
+    }
+  }
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations & Theme Demo - Cogeden CSS</title>
+    <link rel="stylesheet" href="cogeden.css">
+    <style>
+        .demo-box {
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-scheme-primary text-scheme-primary">
+    
+    <!-- Header with Theme Toggle -->
+    <header class="bg-c1-700 text-white p-6 shadow-lg">
+        <div class="container">
+            <div class="flex items-center justify-between flex-wrap">
+                <div>
+                    <h1 class="text-3xl font-bold">Cogeden CSS Ultimate</h1>
+                    <p class="text-sm opacity-80 mt-2">Animations & Auto Theme System</p>
+                </div>
+                <div id="theme-toggle-container"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-8">
+        
+        <!-- Theme System Demo -->
+        <section class="bg-scheme-secondary rounded-lg shadow-lg p-6 mb-8 border border-scheme">
+            <h2 class="text-2xl font-bold mb-4">🎨 Automatic Light/Dark Theme</h2>
+            <p class="text-scheme-secondary mb-4">
+                This page automatically adapts to your system's color scheme preference. 
+                Click the theme toggle button in the header to switch manually.
+            </p>
+            <div class="row">
+                <div class="col-4">
+                    <div class="bg-scheme-primary border border-scheme p-4 rounded text-center">
+                        <p class="text-scheme-primary font-semibold">Primary</p>
+                        <p class="text-scheme-secondary text-sm">Adapts to theme</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bg-scheme-secondary border border-scheme p-4 rounded text-center">
+                        <p class="text-scheme-primary font-semibold">Secondary</p>
+                        <p class="text-scheme-secondary text-sm">Adapts to theme</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bg-scheme-tertiary border border-scheme p-4 rounded text-center">
+                        <p class="text-scheme-primary font-semibold">Tertiary</p>
+                        <p class="text-scheme-secondary text-sm">Adapts to theme</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pulse Animations -->
+        <section class="bg-scheme-secondary rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">💓 Pulse Animations</h2>
+            <div class="row">
+                <div class="col-3">
+                    <div class="bg-c8-400 text-white p-6 rounded demo-box animate-pulse">
+                        Pulse
+                    </div>
+                    <p class="text-center text-sm mt-2 text-scheme-secondary">animate-pulse</p>
+                </div>
+                <div class="col-3">
+                    <div class="bg-c16-400 text-white p-6 rounded demo-box animate-heartbeat">
+                        Heartbeat
+                    </div>
+                    <p class="text-center text-sm mt-2 text-scheme-secondary">animate-heartbeat</p>
+                </div>
+                <div class="col-3">
+                    <div class="bg-c24-400 text-white p-6 rounded demo-box animate-ping">
+                        Ping
+                    </div>
+                    <p class="text-center text-sm mt-2 text-scheme-secondary">animate-ping</p>
+                </div>
+                <div class="col-3">
+                    <div class="bg-c32-400 text-white p-6 rounded demo-box hover:animate-pulse">
+                        Hover Me
+                    </div>
+                    <p class="text-center text-sm mt-2 text-scheme-secondary">hover:animate-pulse</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spin & Rotate Animations -->
+        <section class="bg-scheme-secondary rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">🔄 Spin & Rotate</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="bg-c40-400 text-white p-6 rounded demo-box animate-spin">
+                        ⚙️
+                    </div>
+                    <p class="text-center text-sm mt-2 text-scheme-secondary">animate-spin</p>
+                </div>
+                <div class="col-4">
+                    <div class="bg-c48-400 text-white p-6 rounded demo-box animate-wiggle">
+                        🎯
+                    </div>
+                    <p class="text-center text-sm mt-2 text-scheme-secondary">animate-wiggle</p>
+                </div>
+                <div class="col-4">
+                    <div class="bg-c56-400 text-white p-6 rounded demo-box rotate-45">
+                        📐
+                    </div>
+                    <p class="text-center text-sm mt-2 text-scheme-secondary">rotate-45</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bounce & Movement -->
+        <section class="bg-scheme-secondary rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">⬆️ Bounce & Movement</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="bg-c1-500 text-white p-6 rounded demo-box animate-bounce">
+                        Bounce
+                    </div>
+                    <p class="text-center text-sm mt-2 text-scheme-secondary">animate-bounce</p>
+                </div>
+                <div class="col-4">
+                    <div class="bg-c16-500 text-white p-6 rounded demo-box animate-shake">
+                        Shake
+                    </div>
+                    <p class="text-center text-sm mt-2 text-scheme-secondary">animate-shake</p>
+                </div>
+                <div class="col-4">
+                    <div class="bg-c32-500 text-white p-6 rounded demo-box hover:animate-bounce">
+                        Hover Bounce
+                    </div>
+                    <p class="text-center text-sm mt-2 text-scheme-secondary">hover:animate-bounce</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fade Animations -->
+        <section class="bg-scheme-secondary rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">✨ Fade Effects</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="bg-c8-500 text-white p-6 rounded demo-box animate-fade-in">
+                        Fade In
+                    </div>
+                    <p class="text-center text-sm mt-2 text-scheme-secondary">animate-fade-in</p>
+                </div>
+                <div class="col-4">
+                    <div class="bg-c16-500 text-white p-6 rounded demo-box animate-slide-in-left">
+                        Slide Left
+                    </div>
+                    <p class="text-center text-sm mt-2 text-scheme-secondary">animate-slide-in-left</p>
+                </div>
+                <div class="col-4">
+                    <div class="bg-c24-500 text-white p-6 rounded demo-box animate-slide-in-right">
+                        Slide Right
+                    </div>
+                    <p class="text-center text-sm mt-2 text-scheme-secondary">animate-slide-in-right</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Animation Controls -->
+        <section class="bg-scheme-secondary rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">⏱️ Animation Controls</h2>
+            <div class="row">
+                <div class="col-3">
+                    <div class="bg-c32-400 text-white p-4 rounded text-center animate-pulse animate-duration-300">
+                        Fast (300ms)
+                    </div>
+                    <p class="text-center text-xs mt-2 text-scheme-secondary">animate-duration-300</p>
+                </div>
+                <div class="col-3">
+                    <div class="bg-c32-400 text-white p-4 rounded text-center animate-pulse animate-duration-1000">
+                        Slow (1000ms)
+                    </div>
+                    <p class="text-center text-xs mt-2 text-scheme-secondary">animate-duration-1000</p>
+                </div>
+                <div class="col-3">
+                    <div class="bg-c32-400 text-white p-4 rounded text-center animate-bounce animate-delay-500">
+                        Delayed
+                    </div>
+                    <p class="text-center text-xs mt-2 text-scheme-secondary">animate-delay-500</p>
+                </div>
+                <div class="col-3">
+                    <div class="bg-c32-400 text-white p-4 rounded text-center animate-bounce animate-twice">
+                        Twice
+                    </div>
+                    <p class="text-center text-xs mt-2 text-scheme-secondary">animate-twice</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Buttons -->
+        <section class="bg-scheme-secondary rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">🎮 Interactive Elements</h2>
+            <div class="flex flex-wrap">
+                <button class="btn btn-primary mr-2 mb-2 transition-all hover:scale-110">Hover Scale</button>
+                <button class="btn btn-success mr-2 mb-2 hover:animate-shake">Hover Shake</button>
+                <button class="btn btn-danger mr-2 mb-2 animate-pulse">Pulsing Button</button>
+                <button class="btn btn-warning mr-2 mb-2 transition-all hover:shadow-lg">Hover Shadow</button>
+                <button class="btn btn-info mr-2 mb-2 animate-heartbeat">Heartbeat</button>
+            </div>
+        </section>
+
+        <!-- Loading Indicators -->
+        <section class="bg-scheme-secondary rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">⏳ Loading Indicators</h2>
+            <div class="flex items-center flex-wrap">
+                <div class="mr-8 mb-4 text-center">
+                    <div class="inline-block w-12 h-12 border-4 border-c16-400 border-t-transparent rounded-full animate-spin"></div>
+                    <p class="text-xs mt-2 text-scheme-secondary">Spinner</p>
+                </div>
+                <div class="mr-8 mb-4 text-center">
+                    <div class="inline-block w-12 h-12 bg-c24-400 rounded-full animate-pulse"></div>
+                    <p class="text-xs mt-2 text-scheme-secondary">Pulse</p>
+                </div>
+                <div class="mr-8 mb-4 text-center">
+                    <div class="inline-block w-12 h-12 bg-c32-400 rounded-full animate-ping"></div>
+                    <p class="text-xs mt-2 text-scheme-secondary">Ping</p>
+                </div>
+                <div class="mr-8 mb-4 text-center">
+                    <div class="inline-block w-12 h-12 bg-c40-400 rounded-full animate-bounce"></div>
+                    <p class="text-xs mt-2 text-scheme-secondary">Bounce</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Examples -->
+        <section class="bg-scheme-secondary rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">💻 Code Examples</h2>
+            <div class="bg-scheme-tertiary p-4 rounded border border-scheme">
+                <pre class="text-sm text-scheme-primary"><code>&lt;!-- Pulse Animation --&gt;
+&lt;div class="animate-pulse"&gt;Pulsing element&lt;/div&gt;
+
+&lt;!-- Spin Animation --&gt;
+&lt;div class="animate-spin"&gt;Spinning element&lt;/div&gt;
+
+&lt;!-- Hover Animation --&gt;
+&lt;div class="hover:animate-shake"&gt;Shake on hover&lt;/div&gt;
+
+&lt;!-- Theme-aware Colors --&gt;
+&lt;div class="bg-scheme-primary text-scheme-primary"&gt;
+  Adapts to light/dark mode
+&lt;/div&gt;
+
+&lt;!-- Animation Controls --&gt;
+&lt;div class="animate-bounce animate-duration-500 animate-delay-200"&gt;
+  Controlled animation
+&lt;/div&gt;</code></pre>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-scheme-tertiary text-scheme-primary p-8 text-center border-t border-scheme">
+        <p class="text-lg font-bold mb-2">Cogeden CSS - Ultimate System</p>
+        <p class="text-sm text-scheme-secondary mb-4">
+            Animations | Auto Theme | 524 Colors | IE6-11 Support
+        </p>
+        <p class="text-xs text-scheme-tertiary">
+            19,239+ CSS Lines | Production Ready
+        </p>
+    </footer>
+
+    <!-- Chrome 44 Polyfill -->
+    <script>
+        // Chrome 44 and Old Browser Polyfills
+        (function() {
+          'use strict';
+          
+          // Polyfill for localStorage
+          if (typeof localStorage === 'undefined') {
+            window.localStorage = {
+              _data: {},
+              setItem: function(id, val) { return this._data[id] = String(val); },
+              getItem: function(id) { return this._data.hasOwnProperty(id) ? this._data[id] : null; },
+              removeItem: function(id) { return delete this._data[id]; },
+              clear: function() { return this._data = {}; }
+            };
+          }
+          
+          // Polyfill for matchMedia
+          if (!window.matchMedia) {
+            window.matchMedia = function(query) {
+              return {
+                matches: false,
+                media: query,
+                addListener: function() {},
+                removeListener: function() {}
+              };
+            };
+          }
+          
+          // Polyfill for Array.indexOf
+          if (!Array.prototype.indexOf) {
+            Array.prototype.indexOf = function(searchElement, fromIndex) {
+              var k;
+              if (this == null) throw new TypeError('"this" is null or not defined');
+              var o = Object(this);
+              var len = o.length >>> 0;
+              if (len === 0) return -1;
+              var n = +fromIndex || 0;
+              if (Math.abs(n) === Infinity) n = 0;
+              if (n >= len) return -1;
+              k = Math.max(n >= 0 ? n : len - Math.abs(n), 0);
+              while (k < len) {
+                if (k in o && o[k] === searchElement) return k;
+                k++;
+              }
+              return -1;
+            };
+          }
+        })();
+    </script>
+    
+    <!-- Theme Switcher Script -->
+    <script>
+        // Inline theme switcher (Chrome 44 compatible)
+        (function() {
+            var CogedenTheme = {
+                getTheme: function() {
+                    try {
+                        var stored = localStorage.getItem('cogeden-theme');
+                        if (stored) return stored;
+                    } catch (e) {
+                        // localStorage not available
+                    }
+                    
+                    // Check system preference (with fallback)
+                    try {
+                        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                            return 'dark';
+                        }
+                    } catch (e) {
+                        // matchMedia not supported
+                    }
+                    
+                    return 'light';
+                },
+                
+                setTheme: function(theme) {
+                    var html = document.documentElement;
+                    
+                    // Remove existing classes (compatible way)
+                    var className = html.className;
+                    className = className.replace(/\blight-mode\b/g, '');
+                    className = className.replace(/\bdark-mode\b/g, '');
+                    className = className.replace(/\s+/g, ' ').trim();
+                    
+                    // Add new theme class
+                    html.className = className + ' ' + theme + '-mode';
+                    
+                    // Save to localStorage
+                    try {
+                        localStorage.setItem('cogeden-theme', theme);
+                    } catch (e) {
+                        // localStorage not available
+                    }
+                },
+                
+                toggleTheme: function() {
+                    var current = this.getTheme();
+                    var newTheme = current === 'dark' ? 'light' : 'dark';
+                    this.setTheme(newTheme);
+                    return newTheme;
+                },
+                
+                init: function() {
+                    var theme = this.getTheme();
+                    this.setTheme(theme);
+                }
+            };
+            
+            // Initialize
+            CogedenTheme.init();
+            
+            // Create toggle button
+            var container = document.getElementById('theme-toggle-container');
+            if (container) {
+                var button = document.createElement('button');
+                button.className = 'btn btn-light';
+                
+                // Set initial text
+                var currentTheme = CogedenTheme.getTheme();
+                if (currentTheme === 'dark') {
+                    button.innerHTML = '&#127769; Dark';
+                } else {
+                    button.innerHTML = '&#9728; Light';
+                }
+                
+                // Add click handler
+                button.onclick = function() {
+                    var newTheme = CogedenTheme.toggleTheme();
+                    if (newTheme === 'dark') {
+                        button.innerHTML = '&#127769; Dark';
+                    } else {
+                        button.innerHTML = '&#9728; Light';
+                    }
+                };
+                
+                container.appendChild(button);
+            }
+        })();
+    </script>
+
+</body>
+</html>
